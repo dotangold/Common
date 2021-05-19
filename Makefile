@@ -3,7 +3,7 @@ CFLAGS = -fPIC -Wall -Wextra -O2 -g  # C flags
 LDFLAGS = -shared  # linking flags
 RM = rm -f   # rm command
 TARGET_LIB = libCommon.so  # target lib
-INCLUDE = common.h
+INCLUDE = Common.h
 SRCS = Common.c  # source files
 OBJS = $(SRCS:.c=.o)
 
@@ -20,7 +20,8 @@ $(TARGET_LIB): $(OBJS)
 
 .PHONY: clean
 
-install:
-	cp $(TARGET_LIB) $(INCLUDE) ../project1
+#install:
+#	cp *.so $(INCLUDE) .
+
 clean:
 	-${RM} ${TARGET_LIB} ${OBJS} $(SRCS:.c=.d)
