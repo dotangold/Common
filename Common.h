@@ -5,6 +5,7 @@
 
 void Common1(void);
 void Common2(void);
+void Common3(void);
 
 #endif /* GENERALFUNC_H_ */
 

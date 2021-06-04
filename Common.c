@@ -11,3 +11,8 @@ void Common2(void)
 	printf("Common 2 called\n\r");
 }
 
+void Common3(void)
+{
+	printf("Common 3 called\n\r");
+}
+
